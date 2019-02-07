@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F6CAA0D220C2CD900BC8429 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A6D7661D5A12720014A4FB /* Keys.swift */; };
 		57B24BA5A9C89003B4F06629 /* libPods-VialerSIPLib_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2918FD02F7F72DB3A125794F /* libPods-VialerSIPLib_Tests.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -17,7 +18,6 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		C4021B691D426D5B003560F6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C4021B681D426D5B003560F6 /* .gitignore */; };
-		C4021B6B1D426F22003560F6 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4021B6A1D426F22003560F6 /* Keys.swift */; };
 		C424B50B1C3BD27500178E52 /* VSLAccountConfigurationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C424B50A1C3BD27500178E52 /* VSLAccountConfigurationTests.m */; };
 		C424B50D1C3BD89C00178E52 /* VSLEndpointConfigurationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C424B50C1C3BD89C00178E52 /* VSLEndpointConfigurationTests.m */; };
 		C424B50F1C3BDBD900178E52 /* VSLTransportConfigurationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C424B50E1C3BDBD900178E52 /* VSLTransportConfigurationTests.m */; };
@@ -100,7 +100,6 @@
 		751644FF6D649E93790619BF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		8F7041AC1F0A372AC0CD4BD1 /* Pods-VialerSIPLib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VialerSIPLib_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-VialerSIPLib_Example/Pods-VialerSIPLib_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C4021B681D426D5B003560F6 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
-		C4021B6A1D426F22003560F6 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		C424B50A1C3BD27500178E52 /* VSLAccountConfigurationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSLAccountConfigurationTests.m; sourceTree = "<group>"; };
 		C424B50C1C3BD89C00178E52 /* VSLEndpointConfigurationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSLEndpointConfigurationTests.m; sourceTree = "<group>"; };
 		C424B50E1C3BDBD900178E52 /* VSLTransportConfigurationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSLTransportConfigurationTests.m; sourceTree = "<group>"; };
@@ -128,7 +127,7 @@
 		C49B2C3A1DF9B9CB000FFBF7 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		C4A5C09D1E3640CF008F5297 /* CONTRIBUTING.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CONTRIBUTING.md; path = ../Documentation/CONTRIBUTING.md; sourceTree = "<group>"; };
 		C4A5C09F1E364121008F5297 /* ISSUE_TEMPLATE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = ISSUE_TEMPLATE.md; path = ../.github/ISSUE_TEMPLATE.md; sourceTree = "<group>"; };
-		C4A6D7661D5A12720014A4FB /* Keys.swift.example */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Keys.swift.example; sourceTree = "<group>"; };
+		C4A6D7661D5A12720014A4FB /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		EDD7E6A0D9160F0800D3A0F0 /* libPods-VialerSIPLib_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VialerSIPLib_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE79A6C41E2CFC0E00AC4AC7 /* VSLEndOfCallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSLEndOfCallViewController.swift; sourceTree = "<group>"; };
 		EEF1CB7C1FA096F800B5170F /* VialerSIPLib_Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VialerSIPLib_Example-Prefix.pch"; sourceTree = "<group>"; };
@@ -316,8 +315,7 @@
 			isa = PBXGroup;
 			children = (
 				C48B488D1D421CB100AB2875 /* SipUser.swift */,
-				C4021B6A1D426F22003560F6 /* Keys.swift */,
-				C4A6D7661D5A12720014A4FB /* Keys.swift.example */,
+				C4A6D7661D5A12720014A4FB /* Keys.swift */,
 				C4441B701D424F8100C98E49 /* DDLogWrapper.h */,
 				C4441B711D424F8100C98E49 /* DDLogWrapper.m */,
 			);
@@ -452,7 +450,7 @@
 				ORGANIZATIONNAME = Harold;
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = E2Q9UE8HM6;
+						DevelopmentTeam = WTV9MV492Q;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -462,12 +460,13 @@
 						};
 					};
 					6003F5AD195388D20070C39A = {
+						DevelopmentTeam = WTV9MV492Q;
 						LastSwiftMigration = 0900;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 					F271B54A1DABD18F0028D620 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = E2Q9UE8HM6;
+						DevelopmentTeam = WTV9MV492Q;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -603,12 +602,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F6CAA0D220C2CD900BC8429 /* Keys.swift in Sources */,
 				C48B48901D42228900AB2875 /* AppDelegate.swift in Sources */,
 				C43C515E1D40A46000F8B793 /* VSLKeypadViewController.swift in Sources */,
 				F2800BB71DCB448F009B6361 /* StartCallConvertible.swift in Sources */,
 				C44F26441D3F985B00A5A406 /* VSLTransferInProgressViewController.swift in Sources */,
 				F2800BB61DCB448F009B6361 /* NSUserActivity+StartCallConvertible.swift in Sources */,
-				C4021B6B1D426F22003560F6 /* Keys.swift in Sources */,
 				C44F26421D3F5B7D00A5A406 /* VSLSecondCallViewController.swift in Sources */,
 				C44F26481D3FBFCF00A5A406 /* VSLMakeCallViewController.swift in Sources */,
 				C44F264A1D3FC71D00A5A406 /* VSLCallViewController.swift in Sources */,
@@ -800,7 +799,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = E2Q9UE8HM6;
+				DEVELOPMENT_TEAM = WTV9MV492Q;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/VialerSIPLib/Info.plist";
@@ -826,7 +825,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = E2Q9UE8HM6;
+				DEVELOPMENT_TEAM = WTV9MV492Q;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/VialerSIPLib/Info.plist";
@@ -847,6 +846,7 @@
 			baseConfigurationReference = 1EAFF48D5E8CC18B914D3603 /* Pods-VialerSIPLib_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = WTV9MV492Q;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -868,6 +868,7 @@
 			baseConfigurationReference = 00110A8BDA853C5298946A61 /* Pods-VialerSIPLib_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = WTV9MV492Q;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
@@ -889,7 +890,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = E2Q9UE8HM6;
+				DEVELOPMENT_TEAM = WTV9MV492Q;
 				INFOPLIST_FILE = IntentsExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -914,7 +915,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = E2Q9UE8HM6;
+				DEVELOPMENT_TEAM = WTV9MV492Q;
 				INFOPLIST_FILE = IntentsExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";

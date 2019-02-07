@@ -422,24 +422,25 @@ NSString * const VSLCallErrorDuringSetupCallNotification = @"VSLCallErrorDuringS
     pjsua_call_media_status mediaState = callInfo.media_status;
     VSLLogVerbose(@"Media State Changed from %@ to %@", VSLMediaStateString(self.mediaState), VSLMediaStateString((VSLMediaState)mediaState));
     self.mediaState = (VSLMediaState)mediaState;
-
-    if (self.mediaState == VSLMediaStateActive || self.mediaState == VSLMediaStateRemoteHold) {
-        if (!self.incoming) {
-            // Stop the ringback for outgoing calls.
-            [self.ringback stop];
+    if (!self.muted){
+        if (self.mediaState == VSLMediaStateActive || self.mediaState == VSLMediaStateRemoteHold) {
+            if (!self.incoming) {
+                // Stop the ringback for outgoing calls.
+                [self.ringback stop];
+            }
+            pjsua_conf_connect(callInfo.conf_slot, 0);
+            pjsua_conf_connect(0, callInfo.conf_slot);
         }
-        pjsua_conf_connect(callInfo.conf_slot, 0);
-        pjsua_conf_connect(0, callInfo.conf_slot);
+        
+        if (self.mediaState == VSLMediaStateActive && ![self.audioCheckTimer isValid]) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                self.audioCheckTimerFired = 0;
+                self.audioCheckTimer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(checkIfAudioPresent) userInfo: nil repeats: YES];
+            });
+        }
+        
+        [self updateCallInfo:callInfo];
     }
-
-    if (self.mediaState == VSLMediaStateActive && ![self.audioCheckTimer isValid]) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            self.audioCheckTimerFired = 0;
-            self.audioCheckTimer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(checkIfAudioPresent) userInfo: nil repeats: YES];
-        });
-    }
-
-    [self updateCallInfo:callInfo];
 }
 
 - (void)checkIfAudioPresent {
@@ -579,6 +580,10 @@ NSString * const VSLCallErrorDuringSetupCallNotification = @"VSLCallErrorDuringS
     pjsua_call_info callInfo;
     pjsua_call_get_info((pjsua_call_id)self.callId, &callInfo);
 
+    if (callInfo.conf_slot < 0) {
+        return NO;
+    }
+    
     pj_status_t status;
     if (!self.muted) {
         status = pjsua_conf_disconnect(0, callInfo.conf_slot);
